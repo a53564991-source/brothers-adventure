@@ -1,4 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:label="시완 시우 형제의 모험"
         android:theme="@android:style/Theme.Material.NoActionBar.Fullscreen">
