@@ -29,7 +29,9 @@ jobs:
           "$SDKMANAGER" "platforms;android-35" "build-tools;35.0.0"
 
       - name: Update game files
-        run: cp index.html app/src/main/assets/index.html
+        run: |
+          cp index.html app/src/main/assets/index.html
+          printf "%s" "$GITHUB_REPOSITORY" > app/src/main/assets/repository.txt
 
       - run: gradle assembleDebug
 
